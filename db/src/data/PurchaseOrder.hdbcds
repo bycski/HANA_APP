@@ -66,7 +66,7 @@ context PurchaseOrder {
     };
 
     @Comment : 'Purchase Order Item'
-    /*@@layout{"layoutInfo":{"external":[{"id":"Header","sourceName":"POHeader","x":-169,"y":-214},{"id":"BusinessKey","sourceName":"PRODUCT"},{"id":"BusinessKey","sourceName":"NOTEID"},{"id":"CurrencyT","sourceName":"CURRENCY"},{"id":"AmountT","sourceName":"GROSSAMOUNT"},{"id":"AmountT","sourceName":"NETAMOUNT"},{"id":"AmountT","sourceName":"TAXAMOUNT"},{"id":"QuantityT","sourceName":"QUANTITY"},{"id":"UnitT","sourceName":"QUANTITYUNIT"},{"id":"SDate","sourceName":"DELIVERYDATE"}]}}*/
+    /*@@layout{"layoutInfo":{"external":[{"id":"Header","sourceName":"POHeader","x":-660,"y":-214},{"id":"BusinessKey","sourceName":"PRODUCT"},{"id":"BusinessKey","sourceName":"NOTEID"},{"id":"CurrencyT","sourceName":"CURRENCY"},{"id":"AmountT","sourceName":"GROSSAMOUNT"},{"id":"AmountT","sourceName":"NETAMOUNT"},{"id":"AmountT","sourceName":"TAXAMOUNT"},{"id":"QuantityT","sourceName":"QUANTITY"},{"id":"UnitT","sourceName":"QUANTITYUNIT"},{"id":"SDate","sourceName":"DELIVERYDATE"}]}}*/
     entity Item {
         key POHeader     : association[*, 1..1] to Header { PURCHASEORDERID };
 
